@@ -1,0 +1,12 @@
+spring:
+  datasource:  # 配置mysql
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:derby:ibderby;create=true
+    username: 
+    password: 
+    
+server:
+  port: 36100  # 默认端口
+  
+mybatis:
+  mapper-locations: classpath:mapper/*.xml 
