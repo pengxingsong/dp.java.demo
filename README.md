@@ -1,2 +1,0 @@
-# pxs-javacodetest
-JavaCodeTest
