@@ -1,8 +1,4 @@
 {
-    "java.project.sourcePaths": [
-        "com.pxs.test.ibatis/src",
-        "ibatis/src/main/java/com/pxs/jcode/ibatis"
-    ],
-    "java.configuration.updateBuildConfiguration": "automatic",
-    "maven.view": "hierarchical"
+    "maven.view": "flat",
+    "java.dependency.packagePresentation": "hierarchical"
 }
