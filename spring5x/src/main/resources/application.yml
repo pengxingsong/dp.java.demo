@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: dp-java-demo-spring5x
+  datasource:
+    dynamic:
+      primary: product_db  #设置默认的数据源或者数据源组
+      strict: false
+      datasource:
+        product_db:
+          url: jdbc:mysql://localhost:3306/TProductDB
+          username: root
+          password: root
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          hikari:
+            max-pool-size: 100
+            min-idle: 50
+            connection-timeout: 30000
+        base_db:
+          url: jdbc:mysql://localhost:3306/TBaseDB
+          username: root
+          password: root
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          hikari:
+            max-pool-size: 100
+            min-idle: 50
+            connection-timeout: 30000
+
+
+
+
