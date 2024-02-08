@@ -65,4 +65,21 @@ public class Exp1Test {
         }
     }
 
+    @Test
+    public void forClassLoadMySqlDbDriver(){
+        try{
+            Class.forName("com.mysql.jdbc.Driver");
+        }catch (Exception ex){
+            ex.printStackTrace();
+        }
+    }
+
+    @Test
+    public void forClassLoadMSSqlDbDriver(){
+        try{
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+        }catch (Exception ex){
+            ex.printStackTrace();
+        }
+    }
 }

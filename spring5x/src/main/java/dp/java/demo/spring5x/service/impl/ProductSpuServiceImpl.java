@@ -10,21 +10,19 @@ import dp.java.demo.spring5x.service.ProductCategoryService;
 import dp.java.demo.spring5x.service.ProductSpuService;
 import dp.java.demo.spring5x.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.annotation.Resource;
 
 @Service
 public class ProductSpuServiceImpl extends ServiceImpl<ProductSpuDao, ProductSpuPO> implements ProductSpuService {
 
-    @Resource
-    UserService userService;
-    @Resource
-    ProductCategoryService productCategoryService;
-    @Resource
-    ProductCategoryDao productCategoryDao;
+    @Autowired
+    private UserService userService;
+    @Autowired
+    private ProductCategoryService productCategoryService;
+    @Autowired
+    private ProductCategoryDao productCategoryDao;
 
     @Transactional
     @Override
